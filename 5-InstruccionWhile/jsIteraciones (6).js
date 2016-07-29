@@ -19,11 +19,9 @@ while ( isNaN( cantidad ) )
 cantidad= parseInt(cantidad);
 
 acumulador = acumulador + cantidad; 
-
-
 }
 
  document.getElementById('suma').value=acumulador;
- document.getElementById('promedio').value=acumulador/5;
+document.getElementById('promedio').value=acumulador/5;
 
 }//FIN DE LA FUNCIÓN
