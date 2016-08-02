@@ -1,7 +1,43 @@
 function Mostrar()
-{
+{ var contador=0;
+	var positivo=0;
+	var negativo=0;
+	var respuesta='si';
+	var numero;
 
-	var contador=0;
+
+
+	while( respuesta=='si')
+
+		{ contador++;
+
+			numero=prompt('ingrese un numero ' + contador);
+
+			while(isNaN(numero)==true)
+
+				{ numero=prompt('ingreso invalido. ingrese un valor numerico ' + contador);}
+
+			respuesta=prompt('¿desea ingresar otro numero?')
+
+			while( respuesta != 'si' && respuesta!='no')
+
+				{ numero=prompt('debe ingresar si o no . ');}
+
+			acumulador=prompt('ingrese un numero ' + contador);
+
+			if(acumulador>0)
+
+				{positivo=parseInt(acumulador)+ parseInt(positivo);}
+
+			else
+
+				{negativo= parseInt(acumulador)*parseint(negativo);}
+
+		}
+		document.getElementById('suma').value=positivo;
+		document.getElementById('promedio').value=negativo;
+
+	/*var contador=0;
 var positivo=0;
 var negativo=0;
 var numero;	
@@ -38,7 +74,7 @@ acumulador = prompt("Ingresa un numero:");
 
 
 document.getElementById('suma').value=positivo;
-document.getElementById('producto').value=negativo;
+document.getElementById('producto').value=negativo;*/
 
 
 }//FIN DE LA FUNCIÓN

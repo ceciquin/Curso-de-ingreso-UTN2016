@@ -1,30 +1,31 @@
 function Mostrar()
-{
+{	
+var contador=0;
+var acumulador=0;
+var respuesta='si';// para seguir sumando numeros o no.
+var numero;
 
-	var contador=0;
-	var acumulador=0;
-	var respuesta='si';
-	var otra;
+while( respuesta=='si')
 
-	//respuesta = prompt("Desea ingresar un numero?");
-	acumulador = prompt("Ingresa un numero:");
+	{ contador++;
 
-	while(respuesta == "si"){
+	numero=prompt('ingrese un numero'+ contador);
 
-		contador++;
+	while( isNaN(numero))
 
-		respuesta = prompt("Desea ingresar otro numero?");
+	{ numero= prompt('ingreso invalido. ingrese por favor un numero.' + contador);}
 
-		if(respuesta == "no"){
-			break;
-		}
-			else {
-				otra = prompt("Ingrese un numero:" + contador);
-				acumulador = parseInt(acumulador) + parseInt(otra);
-			}
+		
+		numero=parseInt(numero);
+		acumulador=acumulador+numero;
+		respuesta=prompt("¿Desea continuar? Escriba si o no: ");
+
+
+	while( respuesta!='si' && respuesta!='no')
+
+	{  respuesta= prompt('ingreso invalido. ¿Desea continuar? Escriba si o no: '); }
 
 	}
-
 
 document.getElementById('suma').value=acumulador;
 document.getElementById('promedio').value=acumulador/contador;

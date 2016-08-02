@@ -1,5 +1,10 @@
 function Mostrar()
 {
+		
+	
+
+
+
 
 	var edad= document.getElementById('edad').value;
 
@@ -9,7 +14,7 @@ function Mostrar()
 			if (edad > 18 )
 
 					{ alert("no es adolescente");}
-//tomo la edad  
+
 
 
 }//FIN DE LA FUNCIÓN

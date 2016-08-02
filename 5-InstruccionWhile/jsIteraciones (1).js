@@ -1,6 +1,17 @@
 function Mostrar()
-{
-	var contador=0;
+{ var contador=1;
+	
+
+		while(contador<11)
+
+
+			{ console.log(contador++);}
+
+
+	
+
+
+	/*var contador=0;
 
 	
 
@@ -14,7 +25,12 @@ function Mostrar()
 
 
 			
-					alert( contador ) ; }
+					alert( contador ) ; } */
+
+
+
+
+
 
 
 			

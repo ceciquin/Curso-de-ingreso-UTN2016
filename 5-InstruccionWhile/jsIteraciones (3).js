@@ -7,7 +7,7 @@ while(clave != "utn750")
 
 {
 
-	clave = prompt("ingrese la clave.");
+ clave=prompt("ingrese la clave.");
 
 
 }
